@@ -734,18 +734,18 @@ img {
   align-items: center;
   justify-content: center;
 
-  background:var(--accent-bg-cl);
-  color:var(--light-txt-cl);
+  background: var(--accent-bg-cl);
+  color: var(--light-txt-cl);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-left: 12px;
   font-family: 'Roboto';
   font-size: 16px;
-  line-height:calc(30 / 16);
+  line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   cursor: pointer;
-  
- 
+
+
 }
 
 .form-subscribe input {
@@ -770,7 +770,7 @@ img {
   font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
-  color:var(--light-txt-cl);
+  color: var(--light-txt-cl);
   padding-bottom: 20px;
 }
 
@@ -780,7 +780,7 @@ img {
 
 .telegram {
   margin-left: 12px;
-  fill:var(--light-txt-cl);
+  fill: var(--light-txt-cl);
 }
 
 
@@ -818,6 +818,7 @@ img {
   width: 528px;
   height: 581px;
   background-color: var(--main-bg-cl);
+  padding: 40px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -843,3 +844,111 @@ img {
 
 }
 
+/* REGISTER FORM */
+
+
+.register-form-title {
+  display: block;
+  text-align: center;
+  font-family: 'Roboto';
+
+
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  color: var(--main-txt-cl);
+  margin-bottom: 12px;
+}
+
+.register-form-group {
+  margin-bottom: 20px;
+}
+
+.register-form-agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+}
+
+.register-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: transparent;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  transition: border-color var(--animation);
+}
+
+.register-form-icon{
+  position: absolute;
+  left: 10px;
+  margin-top: 11px;
+
+  transition: fill var(--animation);
+}
+
+.register-form-input:focus,
+.register-form-input:hover {
+  border-color:var(--accent-bg-cl);
+}
+
+.register-form-input:hover ~ .register-form-icon{
+  fill:var(--accent-bg-cl);
+}
+
+
+.register-form-field {
+  display: block;
+  margin-bottom: 10px;
+
+  position: relative;
+}
+
+.register-form-label {
+
+  display: block;
+
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+
+  color: var(--grey-txt-cl);
+  margin-bottom: 4px;
+
+}
+
+.register-form-btn {
+  display: block;
+  margin: 0 auto;
+
+  width: 200px;
+  height: 50px;
+  background: var(--accent-bg-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+
+  color: var(--main-bg-cl);
+
+  transition: var(--animation);
+}
+
+.register-form-btn:hover,
+.register-form-btn:focus {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+}
